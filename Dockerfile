@@ -23,12 +23,13 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 RUN sudo apt-get update && sudo apt-get install yarn
 
-# install groff !?!? needed by awscli docs
-RUN apt-get install -y groff
+## install groff !?!? needed by awscli docs
+#RUN apt-get install -y groff
+#
+## Install aws cli
+#RUN sudo apt-get install -y python-pip
+#RUN pip install --upgrade pip
+#RUN pip install awscli
+#RUN pip install awscli --upgrade
 
-# Install aws cli
-RUN sudo apt-get install -y python-pip
-RUN pip install --upgrade pip
-RUN pip install awscli
-RUN pip install awscli --upgrade
-
+RUN apt-get update && sudo apt-get install -y awscli

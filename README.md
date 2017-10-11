@@ -7,15 +7,8 @@
 ## Run interactively
     docker run -it hanskerkhof/ubuntu-node-awscli /bin/bash
 
-
-Versions
-
-node v6.11.4
-yarn v1.2.0
-npm 3.10.10
-
-awscli 1.11.168
-
+## Publish
+    docker push hanskerkhof/ubuntu-node-awscli
 
 python 2.7
 pip 9.0.1 
