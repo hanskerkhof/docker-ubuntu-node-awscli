@@ -14,6 +14,8 @@ FROM ubuntu:16.04
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y  --no-install-recommends \
     sudo ca-certificates curl less nano unzip wget git
 
+RUN apt-get install -y build-essential
+
 # Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
