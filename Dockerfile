@@ -27,7 +27,7 @@ RUN sudo apt-get update && sudo apt-get install yarn
 
 ## install groff !?!? needed by awscli docs
 #RUN apt-get install -y groff
-#
+
 ## Install aws cli
 RUN sudo apt-get install -y python-pip
 RUN pip install --upgrade pip
