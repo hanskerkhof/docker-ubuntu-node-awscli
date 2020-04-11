@@ -16,14 +16,12 @@
 
 | Package     | Version                    |
 | ------------|----------------------------|
-| Ubuntu      | 16.04.3 LTS (Xenial Xerus) |
-| node        | v9.3.0                     |
-| yarn        | 1.3.2                      |
-| npm         | 5.5.1                      |
-| python      | 2.7.12                     |
-| pip         | 9.0.1                      |
-| curl        | 7.47.0                     |
-| git         | 2.7.4                      |
-| awscli      | 1..11.13                  |
-
-
+| Ubuntu      | 18.04.3 LTS (bionic)       |
+| node        | v13.12.0                   |
+| yarn        | 1.22.4                     |
+| npm         | 8.14.4                     |
+| python      | 2.7.17                     |
+| pip         | 20.0.2                     |
+| curl        | 7.58.0                     |
+| git         | 2.17.1                     |
+| aws         | 1.18.39                    |
