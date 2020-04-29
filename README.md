@@ -1,15 +1,22 @@
+# Docker ubuntu with nodejs, yarn and aws cli
 
+Current version 1.4 (2020-04-28)
 
+## CHANGELOG
+### 1.4
+- Install aws-cli with apt-get install in favor over with python pip 
 
-## Build
+## Howto
+
+### Build
     docker build --no-cache -t hanskerkhof/ubuntu-node-awscli .
 
     docker build --no-cache -t hanskerkhof/ubuntu-node-awscli:tagname .
 
-## Run interactively
+### Run interactively
     docker run -it hanskerkhof/ubuntu-node-awscli /bin/bash
 
-## Publish
+### Publish
     docker push hanskerkhof/ubuntu-node-awscli
 
     docker push hanskerkhof/ubuntu-node-awscli:tagname
