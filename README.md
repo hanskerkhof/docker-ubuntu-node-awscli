@@ -1,10 +1,13 @@
 # Docker ubuntu with nodejs, yarn and aws cli
 
-Current version 1.4 (2020-04-28)
+Current version 1.5 (2020-05-05)
 
 ## CHANGELOG
 ### 1.4
 - Install aws-cli with apt-get install in favor over with python pip 
+
+### 1.5
+- Install openssh
 
 ## Howto
 
@@ -13,6 +16,8 @@ Current version 1.4 (2020-04-28)
 
     docker build --no-cache -t hanskerkhof/ubuntu-node-awscli:tagname .
 
+    docker build --no-cache -t hanskerkhof/ubuntu-node-awscli:1.5 .
+
 ### Run interactively
     docker run -it hanskerkhof/ubuntu-node-awscli /bin/bash
 
@@ -20,6 +25,8 @@ Current version 1.4 (2020-04-28)
     docker push hanskerkhof/ubuntu-node-awscli
 
     docker push hanskerkhof/ubuntu-node-awscli:tagname
+
+    docker push hanskerkhof/ubuntu-node-awscli:1.5
 
 | Package     | Version                    |
 | ------------|----------------------------|
@@ -32,3 +39,4 @@ Current version 1.4 (2020-04-28)
 | curl        | 7.58.0                     |
 | git         | 2.17.1                     |
 | aws         | 1.18.39                    |
+| openssh     | OpenSSH_7.6p1              |
